@@ -29,27 +29,30 @@ function startUp() {
   document.querySelector(".guessesleft").innerHTML = guessleft;
   }
 
-  //Here is where I tried to make my reset button work but it messed up other things so I did not apply it.
-  // function reset() {
-  //   randomTeam = wordBank[Math.floor(Math.random() * wordBank.length)];
-  //   console.log(randomTeam);
-  //   console.log(wordChoice);
-  //   for (var i = 0; i < wordChoice.length; i++){
-     
-  //     underS = answerArray.join(" ");
-  //     console.log(underS);
-
-  //   }
+  // function reset (){
+  //   if (answerArray == wordChoice) {
+  //     for (var i = 0; i < randomTeam.length; i++){
+  //       answerArray[i] = "_";
+  //     }
+  //     underS;
+  //     randomTeam = Math.floor(Math.random() * wordBank.length);
+  //     wordChoice = randomTeam.toUpperCase().split("");
+    
+    
   //   document.querySelector(".answer").innerHTML = underS;
   //   guessleft = 10;
   //   lettersguessed = [];
   //   document.querySelector(".lettersg").innerHTML = lettersguessed;
   //   document.querySelector(".guessesleft").innerHTML = guessleft;
-  //   }
-  // Used this function to reload the page since the above did not work
-  function reset (){
-    location.reload();
-  }
+  //   }  
+  // }
+
+    
+
+
+  // function reset (){
+  //    location.reload();
+  // }
   document.onkeyup = function(event){
   userGuess = event.key.toUpperCase();
   lettersguessed.push(userGuess);
