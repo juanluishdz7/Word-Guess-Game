@@ -50,9 +50,9 @@ function startUp() {
     
 
 
-  // function reset (){
-  //    location.reload();
-  // }
+  function reset (){
+     location.reload();
+  }
   document.onkeyup = function(event){
   userGuess = event.key.toUpperCase();
   lettersguessed.push(userGuess);
